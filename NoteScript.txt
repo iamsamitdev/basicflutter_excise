@@ -1,0 +1,128 @@
+Basic Flutter
+--------------------------------
+วันที่ 2 
+---------------------------------
+การขึ้นโปรเจ็กต์ Flutter
+
+Step 1: เปลี่ยน path ไปยัง folder ที่กำหนด
+---
+cd G:\TrainingWorkshop\BasicFlutterExcise
+
+Step 2: เรียกคำสั่งในสร้างโปรเจ็กต์ใหม่ใน flutter
+---
+flutter create --org com.example flutter_layout
+
+Step 3: ทำการ cd เข้าไปในโปรเจ็กต์
+---
+cd flutter_layout
+
+Step 4: เปิดเข้าโปรแกรม VSCode
+---
+code .
+
+--------------------------------
+วันที่ 3 
+---------------------------------
+Layout Widget
+--
+1. Center
+2. Container
+3. Row/Column
+4. Stack
+5. Positioned
+
+
+Step 1: เปลี่ยน path ไปยัง folder ที่กำหนด
+---
+cd G:\TrainingWorkshop\BasicFlutterExcise
+G:
+
+Step 2: เรียกคำสั่งในสร้างโปรเจ็กต์ใหม่ใน flutter
+---
+flutter create --org com.example workshop_layout
+
+Step 3: เปิดเข้าโปรแกรม VSCode
+---
+code workshop_layout  -r
+
+--------------------------------
+วันที่ 4
+---------------------------------
+การขึ้นโปรเจ็กต์ Flutter
+
+Step 1: เปลี่ยน path ไปยัง folder ที่กำหนด
+---
+cd G:\TrainingWorkshop\BasicFlutterExcise
+G:
+
+Step 2: เรียกคำสั่งในสร้างโปรเจ็กต์ใหม่ใน flutter
+---
+flutter create --org com.example flutter_news
+
+Step 3: เปิดเข้าโปรแกรม VSCode
+---
+code flutter_news  -r
+
+
+โครงสร้างโปรเจ็กต์ flutter_news
+--------------------------------------------------------
++---android
++---assets
+|   +---data
+|   +---icons
+|   \---images
++---fonts
+|       NotoSansThai-Bold.ttf
+|       NotoSansThai-Regular.ttf
+|       NotoSansThai-Thin.ttf
++---functions
+|       pushdata.dart
++---ios
++---lib
+|   |   main.dart
+|   |   routers.dart
+|   +---components
+|   |       round_button.dart
+|   +---models
+|   |       product.dart
+|   +---screens
+|   |   \---bottomnavmenu
+|   |       |   home
+|   |           \---home_screen.dart
+|   |   \---dashboard
+|   |       |   dashboard_screen.dart
+|   |   \---login
+|   |       |   login_screen.dart
+|   |   \---register
+|   |       |   register_screen.dart
+|   |   \---welcome
+|   |       |   welcome_screen.dart
+|   |       \---widgets
+|   +---services
+|   |       rest_api.dart
+|   +---themes
+|   |       colors.dart
+|   |       styles.dart
+|   \---utils
+|           constants.dart
++---test
+|       widget_test.dart
++---web      
++---windows 
+|   .gitignore
+|   .metadata
+|   .packages
+|   analysis_options.yaml
+|   flutter_news.iml
+|   pubspec.lock
+|   pubspec.yaml
+|   README.md
+
+
+คำสั่งในการ build flutter ไปใช้งานจริงบน Web
+----
+flutter build web
+
+คำสั่งในการ run ทดสอบไฟล์ที่ build แล้ว
+---
+flutter run --release -d Chrome
